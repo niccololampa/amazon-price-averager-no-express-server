@@ -77,7 +77,7 @@ const amazonAverage = async (item: string, numPages: string) => {
 
   const averagePrice = computeAveragePrice(allPrices)
 
-  return averagePrice
+  return Number(averagePrice.toFixed(2))
 }
 
 export default amazonAverage

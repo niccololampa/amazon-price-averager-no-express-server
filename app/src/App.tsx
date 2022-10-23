@@ -1,10 +1,7 @@
 import React, { useState } from "react"
 import axios from "axios"
 import "./App.css"
-
-type GetAverageResponse = {
-  data: number
-}
+import amazonAverage from "./helper"
 
 function App() {
   const [item, setItem] = useState("")
@@ -31,11 +28,8 @@ function App() {
   const getAverage = async () => {
     try {
       setRequesting(true)
-      const { data } = await axios.get<GetAverageResponse>(
-        `${process.env.REACT_APP_SERVER}/amazon-average?item=${item}&pages=${pages}`,
-      )
-
-      setAverage(data.data)
+      const average = await amazonAverage(item, pages)
+      setAverage(average)
       setRequesting(false)
     } catch (error) {
       setRequesting(false)

@@ -83,7 +83,7 @@ Examples:
 
 ## Notes: 
 
-1. The extension removes the price outliers before computing the average (see helpers.ts file). This is to have a more accurate price average. 
+1. The extension removes the price outliers before computing the average (see [helpers.ts](https://github.com/niccololampa/price-averager/blob/feature/price-averager-no-node-server/app/src/helper.tsx#L52-L68) file). This is to have a more accurate price average. 
 2. As much as possible do not spam Amazon with requests. Wait for a little bit rather than doing consecutive requests.  Amazon tends to block search page requests if it detects abnormal usage. And will result in the extension not being able to request prices for hours. 
 
 

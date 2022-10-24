@@ -6,6 +6,9 @@ However Cross Domain - CORS extension needs to be installed to disable Chrome's 
 
 See **WITH** express/node server version [here](https://github.com/niccololampa/price-averager/tree/feature/price-averager-with-node-server)
 
+![Screen Shot 2022-10-24 at 3 23 26 PM](https://user-images.githubusercontent.com/37615906/197486110-d372d813-f5e7-4f08-9804-43f29fcefd67.png)
+
+
 
 ## Setup 
 
